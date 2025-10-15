@@ -50,12 +50,21 @@ Figure -02 HALF Subtractor
 
 **Program:**
 
-/* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+/* module fs(a,b,bin,difference,borrow);
+input a,b,bin;
+output difference,borrow;
+assign difference= ( (a ^ b)^bin);
+assign borrow= ( ( ~a & b)| ( bin & (~(a ^ b ))));
+endmodule
 
-Developed by: RegisterNumber:*/
+Developed by:BOJA RAJA G RegisterNumber:*/25015352
 
 **RTL Schematic**
+<img width="1920" height="1080" alt="Screenshot 2025-10-07 175043" src="https://github.com/user-attachments/assets/15943d16-8c59-44b5-91aa-c8d98dea3e34" />
 
 **Output/TIMING Waveform**
+<img width="1920" height="1020" alt="Screenshot 2025-10-07 175209" src="https://github.com/user-attachments/assets/6bbfcd4d-3e0d-4ac3-b856-9de197d20f56" />
+
 
 **Result:**
+Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
